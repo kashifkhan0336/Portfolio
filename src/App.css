@@ -1,10 +1,102 @@
 /*--------------- NAVBAR STYLING --------------------*/
 
+.text {
+  color: white;
+  font-size: 4rem;
+}
+
 .navbar-container {
-    padding: 1rem 2rem;
+  padding: 1rem;
+  background-color: var(--nav-bg);
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--brand);
+}
+
+.navbar__links {
+  display: none;
+}
+
+.navbar__contact-btn {
+  display: none;
+}
+
+.navbar__hamburger {
+  font-size: 2rem;
+  color: var(--yellow-1);
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar__links {
     display: flex;
-    justify-content: space-between;
+    column-gap: 40px;
+    font-size: 1.2rem;
+  }
+
+  .navbar__links--link {
+    color: var(--links);
+  }
+
+  .navbar__links--link.active {
+    color: var(--yellow-1);
+  }
+
+  .navbar__contact-btn {
+    display: inline-block;
+    padding: 0.5em 2em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid var(--yellow-2);
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transition: transform 200ms, background-color 200ms;
+    -webkit-transition: transform 200ms, background-color 200ms;
+    -moz-transition: transform 200ms, background-color 200ms;
+    -ms-transition: transform 200ms, background-color 200ms;
+    -o-transition: transform 200ms, background-color 200ms;
+    cursor: pointer;
+}
+
+  .navbar__contact-btn:hover {
+        background-color: var(--yellow-2);
+  }
+
+  .navbar__contact-btn:active {
+    transform: scale(0.95) translateY(2px) skew(-20deg);
+    -webkit-transform: scale(0.95) translateY(2px) skew(-20deg);
+    -moz-transform: scale(0.95) translateY(2px) skew(-20deg);
+    -ms-transform: scale(0.95) translateY(2px) skew(-20deg);
+    -o-transform: scale(0.95) translateY(2px) skew(-20deg);
+}
+
+  .contact-btn--skew-fix {
+    display: inline-block;
+    color: var(--contact-text);
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+
+  }
+
+  .navbar__hamburger {
+    display: none;
+  }
 }

@@ -5,6 +5,6 @@ export default function Home() {
     document.title = "FrontEnd Portfolio"
   }, [])
   return (
-    <div>Home</div>
+    <div className='text'>Home</div>
   )
 }
