@@ -1,0 +1,10 @@
+/*--------------- NAVBAR STYLING --------------------*/
+
+.navbar-container {
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
