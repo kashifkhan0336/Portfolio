@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
 
@@ -6,14 +6,16 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false)
 
-  console.log(menuOpen)
+  useEffect(()=>{
+    document.get
+  }, [])
 
   return (
     <div className="navbar-container">
       <nav className="navbar">
         <div className="navbar__brand">
           <NavLink to="/" className="brand">
-            MA
+            Maaz Ahmed
           </NavLink>
         </div>
         <ul className={menuOpen ? "navbar__links menu-open" : "navbar__links"}>
@@ -22,6 +24,10 @@ export default function Navbar() {
             className={({ isActive }) =>
               isActive ? "navbar__links--link active" : "navbar__links--link"
             }
+            onClick={() => {
+                setMenuOpen(false)
+                setOpen(false)
+            }}
           >
             Home
           </NavLink>
@@ -30,6 +36,10 @@ export default function Navbar() {
             className={({ isActive }) =>
               isActive ? "navbar__links--link active" : "navbar__links--link"
             }
+            onClick={() => {
+              setMenuOpen(false)
+              setOpen(false)
+          }}
           >
             About
           </NavLink>
@@ -38,6 +48,10 @@ export default function Navbar() {
             className={({ isActive }) =>
               isActive ? "navbar__links--link active" : "navbar__links--link"
             }
+            onClick={() => {
+              setMenuOpen(false)
+              setOpen(false)
+          }}
           >
             Skills
           </NavLink>
@@ -46,11 +60,18 @@ export default function Navbar() {
             className={({ isActive }) =>
               isActive ? "navbar__links--link active" : "navbar__links--link"
             }
+            onClick={() => {
+              setMenuOpen(false)
+              setOpen(false)
+          }}
           >
             Projects
           </NavLink>
         </ul>
-        <Link to="/contact" className={menuOpen ? "navbar__contact-btn btn-open" : "navbar__contact-btn"}>
+        <Link to="/contact" className={menuOpen ? "navbar__contact-btn btn-open" : "navbar__contact-btn"} onClick={() => {
+                setMenuOpen(false)
+                setOpen(false)
+            }}>
           <div className="contact-btn">
             <span className="contact-btn--skew-fix">Contact</span>
           </div>

@@ -12,11 +12,11 @@ export default function Form() {
 
         <p className="input-container">
           <label htmlFor="name" className="form-icon"><FaUserAlt /></label>
-          <input className="input" type="text" id="name" name="name" placeholder="Full Name" required />
+          <input className="input" type="text" id="name" name="name" placeholder="Full Name" autoComplete="off" required />
         </p>
         <p className="input-container">
           <label htmlFor="email" className="form-icon"><FaEnvelope /></label>
-          <input className="input" type="email" id="email" name="email" placeholder="Email Address" required />
+          <input className="input" type="email" id="email" name="email" autoComplete="off" placeholder="Email Address" required />
         </p>
         <p className="input-container">
           <label htmlFor="message" className="form-icon"><FaCommentDots/></label>

@@ -6,7 +6,8 @@
 :root {
   --bg: #101820ff;
   --yellow-1: #FFB700;
-  --yellow-2: #FFA300;
+  --yellow-2: #ff9153;
+  /* --yellow-2: rgba(255,145,83,1); */
   --contact-text: black;
   /* --contact-text: #FEF08A; */
   --nav-bg: black;
