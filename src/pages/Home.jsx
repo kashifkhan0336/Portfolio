@@ -5,7 +5,7 @@ import cv from "../assets/maaz-ahmed-cv.txt";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "FrontEnd Portfolio";
+    document.title = "FrontEnd Portfolio - Home";
   }, []);
   return (
     <section className="home-section">

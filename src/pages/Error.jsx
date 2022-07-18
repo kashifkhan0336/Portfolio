@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowLeft } from "react-icons/fa"
 
 export default function Error() {
+  useEffect(() => {
+    document.title = "404 Page Not Found";
+  }, []);
   return (
     <div className="error-section">
       <h1 className='error-heading'>404</h1>

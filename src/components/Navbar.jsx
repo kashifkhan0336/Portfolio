@@ -67,7 +67,6 @@ export default function Navbar() {
           >
             Projects
           </NavLink>
-        </ul>
         <Link to="/contact" className={menuOpen ? "navbar__contact-btn btn-open" : "navbar__contact-btn"} onClick={() => {
                 setMenuOpen(false)
                 setOpen(false)
@@ -76,6 +75,7 @@ export default function Navbar() {
             <span className="contact-btn--skew-fix">Contact</span>
           </div>
         </Link>
+        </ul>
         <div className="navbar__hamburger">
           <Hamburger
           size={28}
