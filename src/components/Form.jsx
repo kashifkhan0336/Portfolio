@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const onSubmit = data => handleSubmit(data);
   console.log(errors);
 
   return (
@@ -28,7 +28,7 @@ export default function Form() {
           <textarea className="input" id="message" name="message" placeholder="Message" rows="10" {...register("Message", {required: true})}></textarea>
         </p>
         <p className="btn-container">
-          <button className="send-btn"><FaPaperPlane className="send-icon"/>Send </button>
+          <button type="submit" className="send-btn"><FaPaperPlane className="send-icon"/>Send </button>
         </p>
       </form>
       <div className="additional-info">

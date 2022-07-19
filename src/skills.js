@@ -4,60 +4,40 @@ import javascript from "./assets/skills/javascript.png"
 import html from "./assets/skills/html.png"
 import css from "./assets/skills/css.png"
 import tailwind from "./assets/skills/tailwind.png"
-import vite from "./assets/skills/vite.svg"
-import sass from "./assets/skills/sass.png"
 import php from "./assets/skills/php.png"
 import mysql from "./assets/skills/mysql.png"
 
 export default  [
     {
         skillIcon: html,
-        skillName: "HTML",
-        skillPercentage: "90%"
+        skillName: "HTML"
     },
     {
         skillIcon: css,
-        skillName: "CSS",
-        skillPercentage: "85%"
+        skillName: "CSS"
     },
-    // {
-    //     skillIcon: sass,
-    //     skillName: "Sass",
-    //     skillPercentage: "65%"
-    // },
     {
         skillIcon: javascript,
-        skillName: "JavaScript",
-        skillPercentage: "80%"
+        skillName: "JavaScript"
     },
     {
         skillIcon: bootstrap,
-        skillName: "Bootstrap",
-        skillPercentage: "85%"
+        skillName: "Bootstrap"
     },
     {
         skillIcon: tailwind,
-        skillName: "TailwindCSS",
-        skillPercentage: "85%"
+        skillName: "TailwindCSS"
     },
-    // {
-    //     skillIcon: vite,
-    //     skillName: "Vite",
-    //     skillPercentage: "85%"
-    // },
     {
         skillIcon: react,
-        skillName: "ReactJS",
-        skillPercentage: "65%"
+        skillName: "ReactJS"
     },
     {
         skillIcon: php,
-        skillName: "PHP",
-        skillPercentage: "65%"
+        skillName: "PHP"
     },
     {
         skillIcon: mysql,
-        skillName: "MySQL",
-        skillPercentage: "65%"
+        skillName: "MySQL"
     },
 ]
