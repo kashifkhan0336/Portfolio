@@ -38,3 +38,19 @@ body {
 }
 
 
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, var(--secondary), var(--secondary));
+} 
+

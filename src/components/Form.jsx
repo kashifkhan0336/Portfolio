@@ -1,26 +1,31 @@
 import React from "react";
 import { FaUserAlt, FaEnvelope, FaCommentDots, FaPaperPlane, FaWhatsappSquare, FaFacebook, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { useForm } from 'react-hook-form';
 
 
 export default function Form() {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
+  console.log(errors);
+
   return (
     <div className="form-container">
-      <form name="contact" method="post" className="form">
+      <form name="contact" method="post" className="form" onSubmit={handleSubmit(onSubmit)}>
         <input type="hidden" name="form-name" value="contact" />
       <h1 className="form-heading">Get in touch</h1>
 
         <p className="input-container">
           <label htmlFor="name" className="form-icon"><FaUserAlt /></label>
-          <input className="input" type="text" id="name" name="name" placeholder="Full Name" autoComplete="off" required />
+          <input className="input" type="text" id="name" name="name" placeholder="Full Name" autoComplete="off" {...register("Full Name", {required: true, maxLength: 80})} />
         </p>
         <p className="input-container">
           <label htmlFor="email" className="form-icon"><FaEnvelope /></label>
-          <input className="input" type="email" id="email" name="email" autoComplete="off" placeholder="Email Address" required />
+          <input className="input" type="email" id="email" name="email" autoComplete="off" placeholder="Email Address" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
         </p>
         <p className="input-container">
           <label htmlFor="message" className="form-icon"><FaCommentDots/></label>
-          <textarea className="input" id="message" name="message" placeholder="Message" rows="10" required></textarea>
+          <textarea className="input" id="message" name="message" placeholder="Message" rows="10" {...register("Message", {required: true})}></textarea>
         </p>
         <p className="btn-container">
           <button className="send-btn"><FaPaperPlane className="send-icon"/>Send </button>
@@ -31,7 +36,7 @@ export default function Form() {
         <div className="info">
             <p className="info-container">
                     <SiGmail className="info-icon"/>
-                    maazahmed78624@gmail.com
+                    maazahmed786241@gmail.com
             </p>
             <p className="info-container">
                 <FaWhatsappSquare  className="info-icon"/>
