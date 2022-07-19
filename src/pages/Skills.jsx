@@ -17,7 +17,9 @@ export default function Skills() {
   });
   return (
     <section className="skill-section">
-        <h1 className="skill-heading">My Skills</h1>
+      <div className="typewriter">
+        <h1 className="skill-heading heading">My Skills</h1>
+      </div>
       <div className="skill-container">
         {displaySkills}
       </div>

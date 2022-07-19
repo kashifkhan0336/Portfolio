@@ -164,7 +164,7 @@
   .navbar__links--link:first-child {
     margin-left: auto;
   }
-  .navbar__links--link:last-child{
+  .navbar__links--link:last-child {
     margin-right: auto;
   }
 
@@ -301,10 +301,10 @@
 }
 
 @keyframes fadein {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -558,7 +558,7 @@ h2 {
 }
 
 @keyframes fadein-left {
-  0%{
+  0% {
     opacity: 0;
     left: -20%;
   }
@@ -575,7 +575,7 @@ h2 {
 }
 
 @keyframes fadein-right {
-  0%{
+  0% {
     opacity: 0;
     right: -20%;
   }
@@ -591,14 +591,14 @@ h2 {
 }
 
 @keyframes fadein-bottom {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(40%);
     -webkit-transform: translateY(40%);
     -moz-transform: translateY(40%);
     -ms-transform: translateY(40%);
     -o-transform: translateY(40%);
-}
+  }
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -606,7 +606,7 @@ h2 {
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
-}
+  }
 }
 
 .text-gradient {
@@ -626,11 +626,11 @@ h2 {
   display: inline-block;
   padding: 0.7em 2em;
   background-image: linear-gradient(to right, var(--primary), var(--secondary));
-  border-radius:  100px;
-  -webkit-border-radius:  100px;
-  -moz-border-radius:  100px;
-  -ms-border-radius:  100px;
-  -o-border-radius:  100px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
   color: var(--black);
   animation: shine 1s infinite;
   -webkit-animation: shine 1s infinite;
@@ -642,13 +642,13 @@ h2 {
 
 @keyframes shine {
   0% {
-    box-shadow: 2px 2px 25px rgba(255,145,83,1);
+    box-shadow: 2px 2px 25px rgba(255, 145, 83, 1);
   }
   50% {
-    box-shadow: 2px 2px 5px rgba(255,145,83,1);
+    box-shadow: 2px 2px 5px rgba(255, 145, 83, 1);
   }
   100% {
-    box-shadow: 2px 2px 25px rgba(255,145,83,1);
+    box-shadow: 2px 2px 25px rgba(255, 145, 83, 1);
   }
 }
 
@@ -667,8 +667,7 @@ h2 {
     font-size: 1.2rem;
   }
   .home-btn {
-  font-size: 1.3rem;
-
+    font-size: 1.3rem;
   }
 }
 
@@ -680,7 +679,7 @@ h2 {
     text-align: left;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
-    column-gap:50px;
+    column-gap: 50px;
   }
   .home-info {
     align-self: center;
@@ -704,10 +703,11 @@ h2 {
   }
 }
 
-
 /*--------------- SKILLS PAGE STYLING --------------------*/
 
-.skill-section {
+.skill-section,
+.about-section,
+.projects-section {
   padding: 2rem 1rem;
   min-height: calc(100vh - 80px);
   display: flex;
@@ -716,7 +716,8 @@ h2 {
   justify-content: center;
 }
 
-.skill-container, .projects-container {
+.skill-container,
+.projects-container {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -725,7 +726,9 @@ h2 {
   gap: 20px;
 }
 
-.skill-heading, .projects-heading {
+.skill-heading,
+.projects-heading,
+.about-heading {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -799,7 +802,6 @@ h2 {
   -o-border-radius: 7px;
 }
 
-
 .skill:hover {
   transform: scale(1.07);
   -webkit-transform: scale(1.07);
@@ -816,18 +818,15 @@ h2 {
   -moz-transition: color 500ms;
   -ms-transition: color 500ms;
   -o-transition: color 500ms;
-
 }
 
 .skill:hover .skill-name {
   color: var(--black);
 }
 
-
 .skill:hover::before {
   width: 100%;
 }
-
 
 .skill-icon {
   margin-right: 1rem;
@@ -838,7 +837,9 @@ h2 {
   .skill-section {
     padding: 2rem;
   }
-  .skill-heading, .projects-heading {
+  .skill-heading,
+  .projects-heading,
+  .about-heading {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
   }
@@ -851,11 +852,12 @@ h2 {
   .skill-name {
     font-size: 1.2rem;
   }
-
 }
 
 @media only screen and (min-width: 992px) {
-  .skill-heading, .projects-heading {
+  .skill-heading,
+  .projects-heading,
+  .about-heading {
     font-size: 3rem;
     margin-bottom: 3rem;
   }
@@ -916,25 +918,23 @@ h2 {
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     -o-transform: scale(0);
-}
+  }
   50% {
     transform: scale(1.07);
     -webkit-transform: scale(1.07);
     -moz-transform: scale(1.07);
     -ms-transform: scale(1.07);
     -o-transform: scale(1.07);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
 }
-100% {
-  opacity: 1;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-}
-}
-
-
 
 .project-img {
   max-width: 100%;
@@ -958,7 +958,8 @@ h2 {
   column-gap: 20px;
 }
 
-.github-link, .live-site-link {
+.github-link,
+.live-site-link {
   font-size: 0.9rem;
   padding: 0.5em 1.5em;
   border-radius: 5px;
@@ -980,10 +981,14 @@ h2 {
 }
 
 .github-link:hover {
-  background-image: linear-gradient(to right, var(--secondary), var(--secondary));
+  background-image: linear-gradient(
+    to right,
+    var(--secondary),
+    var(--secondary)
+  );
 }
 
-.live-site-link  {
+.live-site-link {
   background-image: linear-gradient(to right, var(--black), var(--black));
   color: var(--secondary);
   border: 1px solid var(--secondary);
@@ -1001,7 +1006,8 @@ h2 {
   .project-title {
     font-size: 1.8rem;
   }
-  .github-link, .live-site-link {
+  .github-link,
+  .live-site-link {
     font-size: 1.1rem;
   }
 }
@@ -1018,3 +1024,116 @@ h2 {
   }
 }
 
+/*--------------- ABOUT PAGE STYLING --------------------*/
+
+.about-section {
+  padding: 2rem 1rem;
+}
+
+.heading {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 1s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.about-container {
+  text-align: center;
+  background-color: var(--card);
+  color: var(--brand);
+  padding: 1rem;
+  letter-spacing: 2px;
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  line-height: 1.5;
+  animation: bounce 1000ms forwards;
+  -webkit-animation: bounce 1000ms forwards;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  25% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+50% {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+75% {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+100% {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+}
+
+.about-text {
+  color: var(--primary);
+}
+
+@media only screen and (min-width: 600px) {
+  .about-container {
+    font-size: 1.3rem;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-container {
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+}

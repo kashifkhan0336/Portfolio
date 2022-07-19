@@ -11,7 +11,9 @@ export default function Projects() {
   })
   return (
     <section className="projects-section">
-      <h1 className="projects-heading">My Projects</h1>
+      <div className="typewriter">
+        <h1 className="projects-heading heading">My Projects</h1>
+      </div>
       <div className="projects-container">
         {displayProjects}
       </div>
