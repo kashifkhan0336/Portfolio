@@ -12,15 +12,15 @@ export default function Form() {
 
         <p className="input-container">
           <label htmlFor="name" className="form-icon"><FaUserAlt /></label>
-          <input className="input" type="text" id="name" name="name" placeholder="Full Name" />
+          <input className="input" type="text" id="name" name="name" placeholder="Full Name" required />
         </p>
         <p className="input-container">
           <label htmlFor="email" className="form-icon"><FaEnvelope /></label>
-          <input className="input" type="email" id="email" name="email" placeholder="Email Address" />
+          <input className="input" type="email" id="email" name="email" placeholder="Email Address" required />
         </p>
         <p className="input-container">
           <label htmlFor="message" className="form-icon"><FaCommentDots/></label>
-          <textarea className="input" id="message" name="message" placeholder="Message" rows="10"></textarea>
+          <textarea className="input" id="message" name="message" placeholder="Message" rows="10" required></textarea>
         </p>
         <p className="btn-container">
           <button type="submit" className="send-btn"><FaPaperPlane className="send-icon"/>Send </button>
