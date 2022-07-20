@@ -31,6 +31,9 @@ export default function Form() {
     onSuccess: (response, context) => {
       console.log("Successfully sent form data to Netlify Server");
     },
+    onFailure: (response, context) => {
+      console.log("err sent form data to Netlify Server");
+    },
   });
 
   const onSubmit = (data) => netlify.handleSubmit(null, data);
