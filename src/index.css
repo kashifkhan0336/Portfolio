@@ -54,3 +54,6 @@ body {
   background-image: linear-gradient(to bottom, var(--secondary), var(--secondary));
 } 
 
+.error-msg {
+  color: white;
+}
