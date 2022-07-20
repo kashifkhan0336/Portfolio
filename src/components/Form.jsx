@@ -1,6 +1,12 @@
 import React from "react";
 import { FaUserAlt, FaEnvelope, FaCommentDots, FaPaperPlane, FaWhatsappSquare, FaFacebook, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import {
+  useNetlifyForm,
+  NetlifyFormProvider,
+  NetlifyFormComponent,
+  Honeypot
+} from 'react-netlify-forms'
 import { useForm } from 'react-hook-form';
 
 
@@ -36,7 +42,7 @@ export default function Form() {
         <div className="info">
             <p className="info-container">
                     <SiGmail className="info-icon"/>
-                    maazahmed786241@gmail.com
+                    maaz.ahmed786242@gmail.com
             </p>
             <p className="info-container">
                 <FaWhatsappSquare  className="info-icon"/>

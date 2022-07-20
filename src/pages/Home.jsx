@@ -21,7 +21,7 @@ export default function Home() {
           </h1>
           <div className="fade-in-bottom">
             <ul className="home-text">
-              <li>Get your website built.</li>
+              <li>Get your dream website built.</li>
               <li>Pixels with purpose.</li>
               <li>Creativity never end.</li>
               <li>Creativity simplified.</li>
