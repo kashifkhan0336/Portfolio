@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import SharedNavbar from "./pages/SharedNavbar"
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -11,7 +11,7 @@ import Error from "./pages/Error"
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<SharedNavbar/>}>
             <Route index element={<Home />} />
@@ -22,6 +22,6 @@ export default function App() {
         </Route>
             <Route path="*" element={<Error />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
