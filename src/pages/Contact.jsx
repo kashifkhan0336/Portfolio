@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react'
-import ContactForm from '../components/ContactForm'
+import React, { useEffect } from "react";
+import Form from "../components/Form";
 
 export default function Contact() {
-  useEffect(()=>{
-    document.title = "FrontEnd Portfolio - Contact"
-  }, [])
+  useEffect(() => {
+    document.title = "FrontEnd Portfolio - Contact";
+  }, []);
   return (
-    <section className='form-section'>
-      <ContactForm />
+    <section className="form-section">
+      <Form />
     </section>
-  )
+  );
 }

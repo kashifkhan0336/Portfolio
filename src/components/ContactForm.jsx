@@ -23,7 +23,7 @@ export default function Form() {
           <textarea className="input" id="message" name="message" placeholder="Message" rows="10" required></textarea>
         </p>
         <p className="btn-container">
-          <button type="submit" className="send-btn"><FaPaperPlane className="send-icon"/>Send </button>
+          <button type="submit" className="send-btn"><FaPaperPlane className="send-icon"/>Send1 </button>
         </p>
       </form>
       <div className="additional-info">
