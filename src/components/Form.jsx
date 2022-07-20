@@ -8,7 +8,6 @@ import {
   Honeypot
 } from 'react-netlify-forms'
 import { useForm } from 'react-hook-form';
-// import { ErrorMessage } from '@hookform/error-message';
 
 export default function NewsletterForm() {
     const { register, handleSubmit, errors } = useForm({ mode: 'onBlur' })
@@ -56,12 +55,9 @@ export default function NewsletterForm() {
                 variant: 'forms.input'
               }}
             />
-             {/* <ErrorMessage
-             className="error-msg"
-              errors={errors}
-              name="name"
-              render={({ message }) => <p>{message}</p>}
-            /> */}
+            {/* {errors.email && (
+              <div className="error-msg" sx={{ variant: 'text.error' }}>{errors.email.message}</div>
+            )} */}
           </div>
 
           <div className="input-container">

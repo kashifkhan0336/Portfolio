@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import ContactForm from '../components/ContactForm'
+import Form from '../components/Form'
 
 export default function Contact() {
   useEffect(()=>{
@@ -7,7 +7,7 @@ export default function Contact() {
   }, [])
   return (
     <section className='form-section'>
-      <ContactForm />
+      <Form />
     </section>
   )
 }
